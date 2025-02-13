@@ -22,7 +22,7 @@ export async function GET() {
     }), { status: 200 });
   } catch (error) {
     return new Response(JSON.stringify({
-      error: error.message || 'An error occurred'
+      error: error || 'An error occurred'
     }), { status: 500 });
   }
 }
