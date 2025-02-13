@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "pnpm install --save-dev && next build",
+    "build": "pnpm add -D @types/react @types/node && next build",
     "dev": "next dev --turbopack",
     "start": "next start",
     "lint": "next lint"
