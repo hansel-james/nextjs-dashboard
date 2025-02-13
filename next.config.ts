@@ -1,9 +1,6 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  experimental: {
-    ppr: 'incremental', // Enable incremental pre-rendering
-  },
   // Example of setting a basePath if your app is under a subfolder
   basePath: process.env.NODE_ENV === 'production' ? '/my-app' : '',
   
