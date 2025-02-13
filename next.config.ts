@@ -6,7 +6,11 @@ const nextConfig: NextConfig = {
   },
   // Example of setting a basePath if your app is under a subfolder
   basePath: process.env.NODE_ENV === 'production' ? '/my-app' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? 'nextjs-dashboard-2nl9.vercel.app' : '',
+  
+  // Correct assetPrefix with full URL for production (https://)
+  assetPrefix: process.env.NODE_ENV === 'production' 
+    ? 'https://nextjs-dashboard-2nl9.vercel.app' 
+    : '',
 
   // You can also set custom redirects, rewrites, etc.
   async redirects() {
