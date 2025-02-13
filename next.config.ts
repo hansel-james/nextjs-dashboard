@@ -2,7 +2,7 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   // Example of setting a basePath if your app is under a subfolder
-  basePath: process.env.NODE_ENV === 'production' ? '/my-app' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '' : '',
   
   // Correct assetPrefix with full URL for production (https://)
   assetPrefix: process.env.NODE_ENV === 'production' 
